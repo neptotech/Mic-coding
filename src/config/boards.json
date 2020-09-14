@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "architecture": "avr",
+      "fqbn": "arduino:avr:uno",
+      "href": "/v3/boards/arduino:avr:uno",
+      "name": "Arduino/Genuino Uno",
+      "package": "arduino"
+    },
+    {
+      "architecture": "avr",
+      "fqbn": "arduino:avr:leonardo",
+      "href": "/v3/boards/arduino:avr:leonardo",
+      "name": "Arduino Leonardo",
+      "package": "arduino",
+      "plan": "create-free"
+    },
+    {
+      "architecture": "avr",
+      "fqbn": "arduino:avr:micro",
+      "href": "/v3/boards/arduino:avr:micro",
+      "name": "Arduino/Genuino Micro",
+      "package": "arduino",
+      "plan": "create-free"
+    },
+    {
+      "architecture": "avr",
+      "fqbn": "arduino:avr:nano",
+      "href": "/v3/boards/arduino:avr:nano",
+      "name": "Arduino Nano",
+      "package": "arduino",
+      "plan": "create-free"
+    },
+    {
+      "architecture": "avr",
+      "fqbn": "arduino:avr:mega",
+      "href": "/v3/boards/arduino:avr:mega",
+      "name": "Arduino/Genuino Mega or Mega 2560",
+      "package": "arduino",
+      "plan": "create-free"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+.mdesinger-DotColor {
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-select: none;
+    .buggy-bg-div{
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0 ,0 ,0 ,0);
+    }
+    width: 204px;
+    height: 235px;
+    background-color: #383838;
+    border-radius: 5px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+
+    .dotWrapper::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .dotWrapper {
+        position: relative;
+        z-index: 99;
+        margin: 0 auto;
+        width: 163px;
+        a {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            display: block;
+            float: left;
+            cursor: pointer;
+        }
+        a:nth-child(8n) {
+            margin-right: 0;
+        }
+    }
+    .btnWrapper {
+        position: relative;
+        z-index: 99;
+        height: 30px;
+        li:nth-child(3) {
+            img {
+                padding: 4px;
+                margin-top: 2px;
+            }
+        }
+        li {
+            img {
+                width: 20px;
+                height: 20px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 25%;
+            float: left;
+            text-align: center;
+        }
+        li:hover {
+            border: 1px solid #535353;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        margin-top: 9px;
+        width: 100%;
+    }
+
+    .btnWrapper.unChoseColor{
+        li:hover {
+            border: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    }
+
+    .maskWp {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .sliderWrapper {
+        z-index: 999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: absolute;
+        top: 235px;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0 10px 10px 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 5px;
+        .item {
+            p {
+                margin: 10px 0;
+                font-size: 14px;
+                color: #333;
+                span {
+                    margin-left: 10px;
+                }
+            }
+            .Slider {
+                cursor: pointer;
+                .wp1 {
+                    width: 188px;
+                    height: 24px;
+                    background-color: #eee;
+                    border-radius: 20px;
+                    border: 1px solid #FB6148;
+                    padding: 4px;
+                    position: relative;
+                    z-index: 1;
+                    .wp2 {
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 100%;
+                        .btn:active {
+                            opacity: .9;
+                        }
+                        .btn {
+                            width: 36px;
+                            height: 36px;
+                            display: block;
+                            border-radius: 100%;
+                            position: absolute;
+                            top: -2px;
+                            cursor: pointer;
+                            z-index: 2;
+                        }
+                    }
+
+                    .wp2.color {
+                        background: -webkit-linear-gradient(left, #FF0000, #F7FF00, #00C7FF, #D600FF, #FF0000); /* Safari 5.1 - 6.0 */
+                        background: -o-linear-gradient(right, #FF0000, #F7FF00, #00C7FF, #D600FF, #FF0000); /* Opera 11.1 - 12.0 */
+                        background: -moz-linear-gradient(right, #FF0000, #F7FF00, #00C7FF, #D600FF, #FF0000); /* Firefox 3.6 - 15 */
+                        background: linear-gradient(to right, #FF0000, #F7FF00, #00C7FF, #D600FF, #FF0000); /* 标准的语法 */
+                    }
+                    .wp2.saturation {
+                        background: -webkit-linear-gradient(left, #fff, #FF7600); /* Safari 5.1 - 6.0 */
+                        background: -o-linear-gradient(right, #fff, #FF7600); /* Opera 11.1 - 12.0 */
+                        background: -moz-linear-gradient(right, #fff, #FF7600); /* Firefox 3.6 - 15 */
+                        background: linear-gradient(to right, #fff, #FF7600); /* 标准的语法 */
+                    }
+                    .wp2.lightness {
+                        background: -webkit-linear-gradient(left, #2F1500, #B05200); /* Safari 5.1 - 6.0 */
+                        background: -o-linear-gradient(right, #2F1500, #B05200); /* Opera 11.1 - 12.0 */
+                        background: -moz-linear-gradient(right, #2F1500, #B05200); /* Firefox 3.6 - 15 */
+                        background: linear-gradient(to right, #2F1500, #B05200); /* 标准的语法 */
+                    }
+                }
+            }
+
+            .Slider {
+                .wp1 {
+                    border: none;
+                    .wp2 .btn {
+                        width: 36px;
+                        height: 36px;
+                        display: block;
+                        border-radius: 100%;
+                        position: absolute;
+                        top: -2px;
+                        background: rgba(0, 0, 0, .1);
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        z-index: 2;
+                        padding: 4px;
+                        border:1px solid rgba(0 ,0 ,0 ,0.1)
+                    }
+                    .wp2 .btn::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                        background-color: #fff;
+                    }
+                }
+
+            }
+            text-align: left;
+        }
+
+    }
+}
+
+.mdesinger-DotColor.absolute{
+    position: absolute;
+    left: 0;
+    top: 0;
+}

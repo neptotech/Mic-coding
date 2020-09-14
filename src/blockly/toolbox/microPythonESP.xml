@@ -1,0 +1,16 @@
+<xml>
+   <category id="micPythoncontrol" name="控制" className="mdcontrol commonRow-2" expanded="true">
+    <block type="micPythonControl_time_delay">
+      <value name="DELAY_TIME_SECOND">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+  </category>
+  <sep></sep>
+  %{extend_toolbox}%
+</xml>';
+
+
+export default TOOLBOX_XML;

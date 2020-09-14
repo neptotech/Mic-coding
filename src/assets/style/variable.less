@@ -1,0 +1,198 @@
+/***********************
+模块名：配色参数
+************************/
+@UI:ide;
+@ui-prefix:"ide";
+@eui-prefix:eui;
+@grid-columns:24;
+@layoutBorderColor:#d4d7e7;
+
+@primary-color: #0081ef;                         // 全局主色
+@link-color: #0081ef;                            // 链接色
+@link-color-hover: #069eff;                      // 链接色hover
+@link-color-active: #0076db;                     // 链接色press
+@success-color: #52c41a;                         // 成功色
+@warning-color: #faad14;                         // 警告色
+@error-color: #f5222d;                           // 错误色
+@font-size-base: 16px;                           // 主字号
+@font-size-secondary: 14px;                           // 主字号
+@heading-color: rgba(0, 0, 0, .85);              // 标题色
+@text-color: #4a596f;                 // 主文本色
+@text-color-secondary : rgba(0, 0, 0, .45);      // 次文本色
+@disabled-color : rgba(0, 0, 0, .25);            // 失效色
+@border-radius-base: 4px;                        // 组件/浮层圆角
+@border-color-base: #e2e5f0;                     // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, .15);  // 浮层阴影
+
+
+/***********************
+design tokens：配色参数
+************************/
+/* Color */
+@color-brand1     : #0081ef;
+@color-brand1-1   : #b5ddff;
+@color-brand1-2   : #a8d7ff;
+@color-brand1-3   : #7ac2ff;
+@color-brand1-4   : #4cadff;
+@color-brand1-5   : #1e97ff;
+@color-brand1-6   : #0081ef;
+@color-brand1-7   : #0068c1;
+@color-brand1-8   : #004f93;
+@color-brand1-9   : #003765;
+@color-brand1-10  : #001e37;
+@color-brand2     : #4a596f;
+@color-white      : #fff;
+@color-black      : #000;
+@color-transparent: transparent;
+@color-link-1     : @color-brand2;
+@color-link-2     : @color-brand1-6;
+@color-link1-2    : #28a1fc;          // 链接色-hover
+@color-link1-3    : @color-brand1;    // 链接色-normal
+@color-link1-4    : #0065c9;          // 链接色-active
+@color-link2-1    : #8a96a5;          // 链接色-hover
+@color-link2-2    : @color-brand2;    // 链接色-hover
+@color-link2-3    : #dbdee2;          // 链接色-normal
+@color-link2-4    : @color-brand2;    // 链接色-active
+@color-success    : #00caa0;
+@color-success-1  : #def5f4;
+@color-success-2  : #85e4d2;          // 成功色-hover
+@color-success-3  : #5bc6a2;          // 成功色-normal
+@color-success-4  : #42a184;          // 成功色-active
+@color-error      : #f52d2c;
+@color-error-1    : #f7e9eb;
+@color-error-2    : #f8b4b5;          // 出错-hover
+@color-error-3    : #e85e59;          // 出错-normal
+@color-error-4    : #c24040;          // 出错-active
+
+@color-warning:#ffca4c;//用于警告或者强调
+@color-warning-1:#ffca4c;
+@color-warning-2:#754925;
+
+@color-text       : @color-brand2;
+@color-text-1     : @color-brand2;
+@color-text-2     : #8a96a5;          //60%
+@color-text-3     : #b7bdc5;//40%
+@color-text-4     : #dbdee2;          //20%
+@color-text-5     : #339af2;
+@color-text-6     : @color-brand1-6;
+@color-text1:@color-brand1;
+@color-text1-1    : @color-brand1;
+@color-text1-2    : #339af2;          //80%
+@color-text1-3    : @color-brand1;    //80%
+@color-text2-1    : #dbdee2;          //20%
+@color-text2-2    : #8a96a5;          //60%
+@color-text2-3    : @color-brand2;
+@color-text0:@color-white;
+@color-text0-1:@color-white;
+@color-text0-2:rgba(@color-white,0.8);
+@color-text0-3:rgba(@color-white,0.6);
+@color-text0-4:rgba(@color-white,0.2);
+
+@color-line-1 : #e2e5f0;                 //边框默认
+@color-line-2 : #c3d3eb;                 //模块分割线
+@color-line-3 : #99cdf9;                 //边框hover态
+@color-line-4 : @color-brand1-6;           //边框selected态
+@color-line0:@color-white;
+@color-line0-1: rgba(@color-white,0.2);
+@color-line0-2: rgba(@color-white,0.4);
+@color-line0-3: rgba(@color-white,0.6);
+@color-line0-4: rgba(@color-white,0.8);
+
+@color-line1:@color-brand1;
+@color-line1-1: #99cdf9;//40%
+@color-line1-2: #99cdf9;//40%
+@color-line1-3: @color-brand1;
+
+@color-line2-3: @color-brand2;
+
+
+@color-fill-1 : #f7fafd;                  //#e8eef8;         //白底下拉列表hover底色
+@color-fill-2 : #ebf1f6;                  //#c3d3eb;         //导航底
+@color-fill-3 : #ecf1f7;                  //#dce9f4;         //灰色底默认  舞台下方属性功能底
+@color-fill-4 : #cedeeb;                  //#cedeeb;         //灰色底下拉列表hover
+@color-fill-5 : #e5ecf5;                  //#ecf0f7;//滚动条
+@color-fill-6 : #c3d3eb;
+@color-fill0  : @color-white;
+@color-fill0-1: rgba(@color-white,0.15);
+@color-fill0-2: rgba(@color-white,0.2);
+@color-fill0-3: rgba(@color-white,0.4);
+
+@color-fill1:@color-brand1;
+@color-fill1-1: #a3e0ff;
+@color-fill1-2: #28a1fc;
+@color-fill1-3: @color-brand1;
+@color-fill1-4: #0065c9;
+
+@color-fill2-1: #cbd3db;
+@color-fill2-2: #8a96a5;
+@color-fill2-3: @color-brand2;
+
+//#d061bc,#a568f0,#5b8bf8,#3eaedd,#15bfa0,#69c12e,#f3ab3a,#f18657,#f16f6f,#de5a7f
+@color-data-1:#d061bc;
+@color-data-2:#a568f0;
+@color-data-3:#5b8bf8;
+@color-data-4:#3eaedd;
+@color-data-5:#15bfa0;
+@color-data-6:#69c12e;
+@color-data-7:#f3ab3a;
+@color-data-8:#f18657;
+@color-data-9:#f16f6f;
+@color-data-10:#de5a7f;
+
+@color-icon-1       : #dbdee2;         //icon不可点击
+@color-icon-2       : #8a96a5;         //icon默认
+@color-icon-3       : #339af2;         //icon hover
+
+/* Font */
+@font-family-base    : "Helvetica Neue", "Helvetica",       "Arial",       "PingFang SC", "Microsoft YaHei", "微软雅黑",            "sans-serif";
+@font-family-en      : "Helvetica Neue", "Helvetica",       "Arial";
+@font-family-zh      : "PingFang SC",    "Microsoft YaHei", "微软雅黑",        "sans-serif";
+@font-family-code    : "Monaco",         "Menlo",           "Ubuntu Mono", "Consolas",    "PingFang SC",     "Microsoft YaHei", "微软雅黑", "sans-serif";
+@font-lineheight-s   : 1.3;
+@font-lineheight-base: 1.5;
+@font-lineheight-l   : 1.7;
+@font-size-xxs       : 8px;
+@font-size-xs        : 8px;
+@font-size-s         : 12px;
+@font-size-base      : 14px;
+@font-size-l         : 16px;
+@font-size-xl        : 18px;
+@font-size-xxl       : 22px;
+@font-size-xxxl      : 24px;
+/* Size */
+@s-base: 4px;
+@s-1   : @s-base;
+/* Shadow */
+@shadow-color: rgba(0, 0, 0, 0.15);
+@shadow-0    : none;
+@shadow-1    : 0 2px 8px rgba(0, 0, 0, 0.15);
+@shadow-2    : 0 4px 12px rgba(0,0,0,.15);
+@shadow-3    : 0px 4px 4px rgba(0, 0, 0, 0.2);
+/* Corner */
+@corner-1     : 4px;
+@corner-2     : 6px;
+@corner-3     : 20px;
+@corner-circle: 50%;
+@corner-0     : 0;
+/* Line */
+@line-0              : 0;
+@line-1              : 1px;
+@line-2              : 2px;
+@line-3              : 3px;
+
+@transition-0    : none;
+@transition-1    : all 0.2s;
+/* Global */
+@class-prefix        : ".ide";
+@css-prefix          : "@{str-slice(@class-prefix, 2)}-";
+@cursor-disabled     : not-allowed;
+@scrollbar-width:6px;
+@scrollbar-margin:2px;
+@scrollbar-corner:@scrollbar-width;
+@scrollbar-thumb-color:@color-fill-5;
+@scrollbar-thumb-color-hover:#cfd9e5;
+/***********************
+模块参数：关联design token
+************************/
+/* Icon */
+@icon-prefix         : ~"@{css-prefix}icon";

@@ -1,0 +1,52 @@
+@import "../../../../assets/style/variable.less";
+@import "../../../../assets/style/mixin.less";
+@connection-prefix   : ~".connection";
+
+@{connection-prefix}{
+  &-item{
+    text-align: center;
+    .icon{
+      font-size: 50px;
+      color: rgba(@link-color,.4);
+    }
+    &-tips{
+      font-size: 14px;
+      color: @link-color;
+      margin: 10px 0 30px;
+    }
+    &-btn{
+      width: 222px;
+      margin-bottom: 10px;
+    }
+    &-ctrl{
+      &-btn{
+        margin: 0 5px;
+      }
+    }
+    &-port{
+      line-height: 26px;
+      font-size: 14px;
+      margin: 15px 0 30px;
+      &-label{
+        color: @link-color;
+      }
+      &-select{
+        width: 210px;
+        height: 26px;
+        line-height: 24px;
+        border-radius: 13px;
+        .eui-select-input{
+          min-width: 110px;
+          line-height: 24px;
+        }
+        .eui-dropdown{
+          width: 200px;
+          left: 10px;
+          &-item{
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

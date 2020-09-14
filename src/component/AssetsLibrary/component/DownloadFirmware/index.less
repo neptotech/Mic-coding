@@ -1,0 +1,27 @@
+@import "../../../../assets/style/variable.less";
+@import "../../../../assets/style/mixin.less";
+@download-prefix   : ~".download";
+
+@{download-prefix}{
+  padding-top:64px;
+  &-link{
+    margin: 20px 0 45px;
+    .icon{
+      display: inline-block;
+      transform: rotate(180deg);
+      color: @link-color;
+    }
+    &-text{
+      color: @link-color;
+      text-decoration: underline !important;
+      margin-left: 8px;
+    }
+  }
+  &-ctrl{
+    &-btn{
+      margin: 0 5px;
+    }
+  }
+}
+
+

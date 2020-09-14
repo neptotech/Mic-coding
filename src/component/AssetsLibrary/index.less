@@ -1,0 +1,94 @@
+@import "../../assets/style/variable.less";
+@import "../../assets/style/mixin.less";
+@assetslib-prefix   : ~".assetslib";
+@stage-view-border-color:@color-line-2;
+@stage-view-border-width:@line-1;
+@{assetslib-prefix}{
+  .align-flex();
+  height: 100%;
+  padding-top: 15px;
+  &-aside{
+    width: 110px;
+    border-right: @stage-view-border-width solid @stage-view-border-color;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &-main{
+    flex: 1;
+    height: 100%;
+    .align-flex();
+    .align-flex-middle();
+    .align-flex-center();
+    &-text{
+      font-size: 14px;
+      color: rgba(@text-color,.6);
+    }
+  }
+  &-additem{
+    width: 72px;
+    height: 72px;
+    background: @color-fill-2;
+    position: relative;
+    margin:0 auto 10px;
+    .align-flex();
+    .align-flex-center();
+    .align-flex-middle();
+    cursor: pointer;
+    border:1px solid @color-fill-4;
+    border-radius:@border-radius-base;
+    .icon{
+      font-size: 20px;
+      color: rgba(@text-color,.6);
+      margin-top: -5px;
+    }
+    &-text{
+      width: 100%;
+      font-size: 12px;
+      line-height: 14px;
+      left: 0;
+      bottom: 2px;
+      text-align: center;
+      color: @text-color;
+      position: absolute;
+    }
+  }
+}
+
+.dialog-assetslib{
+  padding:0;
+  overflow: hidden;
+  &.firmware{
+    width: 500px;
+    height: 348px;
+  }
+  &.spritelibrary{
+    width: 800px;
+    height: 600px;
+  }
+  .@{eui-prefix}-dialog{
+      &-hd{
+          height:50px;
+          line-height:50px;
+          border-bottom:1px solid @border-color-base;
+          position: relative;
+          z-index:1;
+          &-title{
+              margin:0;
+              height:50px;
+              line-height:50px;
+              text-align:left;
+              padding-left:20px;
+              font-size:18px;
+              font-weight:bold;
+          }
+      }
+      &-bd{
+          padding:0;
+          //position: relative;
+          z-index:2;
+          
+      }
+  }
+  
+}

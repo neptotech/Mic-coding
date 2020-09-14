@@ -1,0 +1,727 @@
+<xml>
+  <category id="catLogic" name="逻辑" className="event commonRow-1" expanded="true">
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="logic_operation"></block>
+    <block type="logic_negate"></block>
+    <block type="logic_boolean"></block>
+    <block type="logic_null"></block>
+    <block type="logic_ternary"></block>
+    <block type="switch_statement"></block>
+  </category> -->
+  <category id="catLoops" name="循环" className="control commonRow-2">
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+    </block>
+    <block type="controls_whileUntil"></block>
+    <block type="controls_for">
+      <value name="FROM">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+      <value name="BY">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="controls_flow_statements"></block>
+  </category>
+  <category id="catMath" name="数学运算" className="math commonRow-3">
+    <block type="math_number"></block>
+    <block type="math_arithmetic"></block>
+    <block type="math_single"></block>
+    <block type="math_trig"></block>
+    <block type="math_constant"></block>
+    <block type="math_number_property"></block>
+    <block type="math_change">
+      <value name="DELTA">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="math_round"></block>
+    <block type="math_modulo"></block>
+    <block type="math_constrain">
+      <value name="LOW">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="HIGH">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="math_random_int">
+      <value name="FROM">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="math_random_seed">
+      <value name="SEED">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="math_max_min"></block>
+    <block type="math_random_float"></block>
+    <block type="base_map"></block>
+  </category>
+    <category id="catVariables" name="变量" custom="VARIABLE" className="variables commonRow-4" />
+   <!-- <category id="catVariables" name="变量" custom="VARIABLE" className="variables commonRow-4">
+    <block type="variables_get"></block>
+    <block type="variables_set"></block>
+    <block type="variables_set_type"></block>
+    <block type="variables_set">
+      <value name="VALUE">
+        <block type="variables_set_type"></block>
+      </value>
+    </block>
+  </category>-->
+  <category id="catText" name="文字" className="text commonRow-5">
+    <block type="text"></block>
+    <block type="text_join"></block>
+    <block type="text_append">
+      <value name="TEXT">
+        <block type="text"></block>
+      </value>
+    </block>
+    <block type="text_length"></block>
+    <block type="text_isEmpty"></block>
+  </category>
+  <category id="catLists" name="数组" className="list commonRow-6">
+    <block type="lists_variable_set">
+      <value name="VALUE">
+        <block type="lists_create_with">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="lists_create_with">
+      <mutation items="3"></mutation>
+      <value name="ADD0">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="ADD1">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="ADD2">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_create_with2">
+      <value name="ADD0">
+        <block type="text">
+        </block>
+      </value>
+      <value name="ADD1">
+        <block type="text">
+        </block>
+      </value>
+    </block>
+
+    <block type="lists_length">
+      <value name="VAR">
+        <block type="variables_get">
+        </block>
+      </value>
+    </block>
+    <block type="lists_getIndex">
+      <value name="VAR">
+        <block type="variables_get">
+        </block>
+      </value>
+      <value name="AT">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_setIndex">
+      <value name="VAR">
+        <block type="variables_get">
+        </block>
+      </value>
+      <value name="AT">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_setIndex">
+      <value name="VAR">
+        <block type="variables_get">
+        </block>
+      </value>
+      <value name="AT">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="text">
+        </block>
+      </value>
+    </block>
+  </category>
+  <category id="catFunctions" name="函数" custom="PROCEDURE" className="functions commonRow-7"></category>
+  <category id="catInputOutput" name="输入/输出" className="inputoutput commonRow-8">
+    <block type="io_digitalwrite">
+      <value name="PIN">
+        <block type="io_dropdown_digital">
+        </block>
+      </value>
+      <value name="STATE">
+        <block type="io_highlow"></block>
+      </value>
+    </block>
+    <block type="io_digitalread">
+      <value name="PIN">
+        <block type="io_dropdown_digital">
+        </block>
+      </value>
+    </block>
+    <block type="io_builtin_led">
+      <value name="STATE">
+        <block type="io_highlow"></block>
+      </value>
+    </block>
+    <block type="io_pwmwrite">
+      <value name="PIN">
+        <block type="io_dropdown_pwm">
+        </block>
+      </value>
+      <value name="PWMVALUE">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="analogread">
+      <value name="PIN">
+        <block type="io_dropdown_analog">
+        </block>
+      </value>
+    </block>
+    <block type="io_highlow"></block>
+    <block type="inout_notone"></block>
+    <block type="io_pulsein">
+      <value name="PULSETYPE">
+        <block type="io_highlow"></block>
+      </value>
+    </block>
+    <block type="io_pulsetimeout">
+      <value name="PULSETYPE">
+        <block type="io_highlow"></block>
+      </value>
+      <value name="TIMEOUT">
+        <block type="math_number"></block>
+      </value>
+    </block>
+  </category>
+  <category id="catTime" name="时间" className="text commonRow-9">
+    <block type="time_delay">
+      <value name="DELAY_TIME_MILI">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="time_delaymicros">
+      <value name="DELAY_TIME_MICRO">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="time_millis"></block>
+    <block type="time_micros"></block>
+    <block type="infinite_loop"></block>
+    <block type="time_everySecond">
+      <value name="TIME">
+        <block type="math_number">
+          <field name="NUM">5</field>
+        </block>
+      </value>
+    </block>
+    <block type="time_everyMilliSecond">
+      <value name="TIME">
+        <block type="math_number">
+          <field name="NUM">500</field>
+        </block>
+      </value>
+    </block>
+    <block type="time_chrono_setup"></block>
+    <block type="time_chrono_reset"></block>
+    <block type="time_chrono_elapsed"></block>
+    <block type="time_chrono_timeCheck">
+      <value name="TIME">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+  </category>
+
+  <category id="catComms" name="串口通讯" className="common commonRow-4">
+    <block type="serial_setup"></block>
+    <block type="serial_print"></block>
+    <block type="serial1_write"></block>
+  </category>
+   <!-- micro -->
+  <category id="event" name="事件" className="event commonRow-1"  expanded="true">
+    <block type="event_whendeviceopen"></block>
+  </category>
+  <category id="mdcontrol" name="控制" className="control commonRow-2">
+    <block type="control_time_delay">
+      <value name="DELAY_TIME_SECOND">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="mdcontrols_repeat_ext">
+      <value name="TIMES">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+    </block>
+    <block type="mdcontrols_repeat_one"></block>
+    <block type="micControls_if"> </block>
+    <block type="mdcontrols_if"></block>
+    <block type="control_wait"></block>
+    <block type="control_repeat"></block>
+  </category>
+  <category id="miMath" name="运算" className="math commonRow-3">
+    <block type="math_number"></block>
+    <!-- <block type="text"></block> -->
+    <block type="math_arithmetic"></block>
+    <block type="micMath_random_int">
+      <value name="FROM">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="TO">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+    </block>
+    <block type="micMath_and"></block>
+    <block type="logic_compare"></block>
+    <block type="micMath_not"></block>
+    <block type="micMath_join">
+      <value name="ADD0">
+        <block type="text"></block>
+      </value>
+      <value name="ADD1">
+        <block type="text"></block>
+      </value>
+    </block>
+    <block type="micMath_charAt">
+      <value name="ADD0">
+        <block type="text"></block>
+      </value>
+      <value name="ADD1">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="micMath_charLength">
+      <value name="ADD0">
+        <block type="text"></block>
+      </value>
+    </block>
+    <block type="micMath_contains">
+      <value name="ADD0">
+        <block type="text"></block>
+      </value>
+      <value name="ADD1">
+        <block type="text"></block>
+      </value>
+    </block>
+    <block type="micMath_remainder">
+      <value name="DIVISOR">
+        <block type="math_number">
+          <field name="NUM" />
+        </block>
+      </value>
+      <value name="DIVIDEND">
+        <block type="math_number">
+          <field name="NUM" />
+        </block>
+      </value>
+    </block>
+    <block type="math_round"></block>
+    <block type="micMath_single"></block>
+  </category>
+   <category id="catVariables" name="变量" custom="VARIABLE" className="variables commonRow-4" />
+  <category id="catFunctions" name="自制积木" custom="PROCEDURE" className="functions commonRow-7"></category>
+  <category id="micAction" name="动作" className="micAction commonRow-6">
+    <block type="action_motorplus_speed">
+      <value name="speed">
+          <block type="math_number">
+              <field name="NUM">150</field>
+          </block>
+      </value>
+    </block>
+
+    <block type="action_motorplus_brake"></block>
+
+    <block type="action_servo">
+        <value name="port">
+           <block type="action_servo_drop_digital"></block>
+        </value>
+        <value name="angle">
+          <block type="math_number">
+            <field name="NUM">90</field>
+          </block>
+        </value>
+    </block>
+
+    <block type="action_servo_rotate">
+        <value name="port">
+           <block type="action_servo_drop_digital"></block>
+        </value>
+        <value name="angle_begin">
+          <block type="math_number">
+            <field name="NUM">30</field>
+          </block>
+        </value>
+        <value name="angle_end">
+          <block type="math_number">
+            <field name="NUM">120</field>
+          </block>
+        </value>
+        <value name="duration">
+          <block type="math_number">
+            <field name="NUM">0.5</field>
+          </block>
+        </value>
+    </block>
+  </category>
+  <category id="micShow" name="显示" className="micShow commonRow-7">
+    <block type="micShow_rgb">
+      <value name="RED">
+        <block type="math_number">
+          <field name="NUM">255</field>
+        </block>
+      </value>
+      <value name="GREEN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="BLUE">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="micDisplay_colorLED_transition">
+      <value name="PIN">
+        <block type="micDisplay_colorLED_port">
+        </block>
+      </value>
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="COLOR_BEGIN">
+        <block type="mic_LED_color">
+          <field name="FIELDNAME">#7276a5</field>
+        </block>
+      </value>
+      <value name="COLOR_END">
+        <block type="mic_LED_color">
+          <field name="FIELDNAME">#0d4593</field>
+        </block>
+      </value>
+      <value name="duration">
+        <block type="math_number">
+          <field name="NUM">0.5</field>
+        </block>
+      </value>
+    </block>
+     <block type="micdisplay_colorLED_color">
+      <value name="PIN">
+        <block type="micDisplay_colorLED_port">
+        </block>
+      </value>
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="COLOR_BEGIN">
+        <block type="mic_LED_color">
+        </block>
+      </value>
+    </block>
+  </category>
+  <category id="micSensor" name="感知" className="micPerceive commonRow-8">
+    <block type="micSensor_ir_send">
+      <value name="TEXT">
+        <block type="text"></block>
+      </value>
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">32</field>
+        </block>
+      </value>
+    </block>
+    <block type="micSensor_ir_reset_receive">
+      <value name="PIN">
+        <block type="micSensor_port">
+        </block>
+      </value>
+    </block>
+    <block type="micSensor_joystick" />
+    <block type="micSensor_ir_controller">
+      <value name="PIN">
+        <block type="micSensor_port">
+        </block>
+      </value>
+    </block>
+    <block type="micSensor_ir_receive">
+      <value name="PIN">
+        <block type="micSensor_port">
+        </block>
+      </value>
+    </block>
+  </category>
+  <category id="micArduino" name="Arduino" className="micArduino commonRow-9">
+    <block type="micArduino_digital_write">
+      <value name="PIN">
+        <block type="micArduino_dropdown_digital">
+        </block>
+      </value>
+      <value name="STATE">
+        <block type="micArduino_highlow"></block>
+      </value>
+    </block>
+    <block type="micArduino_digital_read">
+      <value name="PIN">
+        <block type="micArduino_dropdown_digital">
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_digital_read_boolean">
+      <value name="PIN">
+        <block type="micArduino_dropdown_digital">
+        </block>
+      </value>
+      <value name="STATE">
+        <block type="micArduino_highlow"></block>
+      </value>
+    </block>
+     <block type="micArduino_analog_read">
+      <value name="PIN">
+        <block type="micArduino_read_boolean">
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_string_convert">
+      <value name="ADD0">
+        <block type="text"></block>
+      </value>
+      <value name="PIN">
+        <block type="micArduino_string_convert_boolean">
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_number_convert">
+      <value name="SEED">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_millis"></block>
+    <block type="micArduino_map">
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="NUM1">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="NUM2">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+      <value name="NUM3">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="NUM4">
+        <block type="math_number">
+          <field name="NUM">255</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_constrain">
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="NUM1">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="NUM2">
+        <block type="math_number">
+          <field name="NUM">255</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_serial_readString"></block>
+    <block type="micArduino_pwm_write">
+    <value name="PWM0">
+        <block type="math_number">
+          <field name="NUM">3</field>
+        </block>
+      </value>
+      <value name="PWM1">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_variable_type"></block>
+    <block type="micArduino_for_each">
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <value name="NUM1">
+        <block type="math_number">
+          <field name="NUM">10</field>
+        </block>
+      </value>
+      <value name="NUM2">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_interval_doing">
+      <value name="NUM0">
+        <block type="math_number">
+          <field name="NUM">2000</field>
+        </block>
+      </value>
+    </block>
+    <block type="micArduino_serial_baud">
+    </block>
+    <block type="micArduino_serial_print">
+      <value name="TEXT">
+        <block type="text"></block>
+      </value>
+    </block>
+  </category>
+  <category id="micLite" name="指间Lite" className="micLite commonRow-4">
+    <block type="click_button_AB"></block>
+    <block type="touch_robot_port"></block>
+    <block type="micLite_led_color"></block>
+    <block type="display_matrix"></block>
+    <block type="show_text">
+      <value name="TEXT">
+        <block type="text"></block>
+      </value>
+    </block>
+    <block type="micLite_notes">
+      <value name="DELAY_TIME_SECOND">
+        <block type="math_number">
+          <field name="NUM">0.25</field>
+        </block>
+      </value>
+    </block>
+    <block type="micLite_clear_screen"></block>
+    <block type="micLite_notes_play"></block>
+    <block type="micLite_notes_play_wait"></block>
+    <block type="micLite_notes_stop"></block>
+    <block type="micLite_notes_light"></block>
+    <block type="micLite_notes_sound"></block>
+    <block type="micLite_notes_speed"></block>
+  </category>
+  <!-- <category id="micRobot" name="Robot" className="micRobot commonRow-11">
+  </category>
+  <category id="micStorage" name="存储" className="micStorage commonRow-12">
+  </category>
+  <category id="micArray" name="Array" className="micArray commonRow-1">
+  </category> -->
+   <!-- <category id="micPythoncontrol" name="控制" className="mdcontrol commonRow-2">
+    <block type="micPythonControl_time_delay">
+      <value name="DELAY_TIME_SECOND">
+        <block type="math_number">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+    </block>
+  </!--> -->
+  <sep></sep>
+  %{extend_toolbox}%
+</xml>';
+
+
+export default TOOLBOX_XML;
